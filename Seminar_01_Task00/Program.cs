@@ -1,6 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Enter the number: ");
-int num = Convert.ToInt32(Console.ReadLine());
-int result = num * num;
+﻿//Программа объединяет все задачи Семинара 01
+using System;
 
-Console.WriteLine($"Your number squared is - {result});
+namespace Seminar {
+    class Main {
+        public static int task ();
+        
+    }
+}
