@@ -13,22 +13,19 @@ internal class Program
         {
             if (inputNum < 1 || inputNum > 7)
             {
-                Console.WriteLine("Вы ввели неверное число. Нужно ввести целое число от 1 до 7");
-                Console.WriteLine("Введите число:");
+                Console.WriteLine("Вы ввели неверное число. Нужно ввести целое число от 1 до 7\nВведите число:");
                 inputNum = Convert.ToInt32(Console.ReadLine());
             }
         }
         while (inputNum < 1 || inputNum > 7);
 
-        string dayOfWeek = weekDays[(inputNum - 1)];
-
         if (weekEnds.Contains(weekDays[(inputNum - 1)]))
         {
-            Console.WriteLine($"Вы ввели число {inputNum}, соответствующее дню недели {dayOfWeek}, который является выходным");
+            Console.WriteLine($"Вы ввели число {inputNum}, соответствующее дню недели {weekDays[(inputNum - 1)]}, который является выходным");
         }
         else
         {
-            Console.WriteLine($"Вы ввели число {inputNum}, соответствующее дню недели {dayOfWeek}, который НЕ является выходным");
+            Console.WriteLine($"Вы ввели число {inputNum}, соответствующее дню недели {weekDays[(inputNum - 1)]}, который НЕ является выходным");
         }
     }
 }
