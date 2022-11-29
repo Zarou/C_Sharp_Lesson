@@ -1,6 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Enter the number: ");
-int num = Convert.ToInt32(Console.ReadLine());
-int result = num * num;
+﻿int inputNum = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine($"Your number squared is - {result});
+if (inputNum > 0 && inputNum < 8)
+{
+    Console.WriteLine("OK");
+}
+else
+{
+    Console.WriteLine("NOT OK");
+}
