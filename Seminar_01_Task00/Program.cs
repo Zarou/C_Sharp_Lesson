@@ -1,10 +1,18 @@
-﻿int inputNum = Convert.ToInt32(Console.ReadLine());
+﻿string inputNumStr = Console.ReadLine();
+char[] inputNumArray = new char[4];
 
-if (inputNum > 0 && inputNum < 8)
+for ( int i = 0; i < inputNumArray.Length; i++)
 {
-    Console.WriteLine("OK");
+    // int i = 0;
+    Console.Write($"{i} |");
+    // Console.Write($"{c} | ");
+    // inputNumArray[i] = c;
+    // i++;
 }
-else
+
+
+
+foreach (char element in inputNumArray)
 {
-    Console.WriteLine("NOT OK");
+    Console.Write($"{element} | ");
 }
