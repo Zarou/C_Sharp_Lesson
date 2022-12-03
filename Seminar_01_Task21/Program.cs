@@ -11,7 +11,7 @@ int pointBcoordY = GetInputNumber('B', 'Y');
 int pointBcoordZ = GetInputNumber('B', 'Z');
 double lineLength = CalcLineLength(pointAcoordX, pointAcoordY, pointAcoordZ, pointBcoordX, pointBcoordY, pointBcoordZ);
 
-Console.WriteLine($"Длина отрезка A({pointAcoordX}, {pointAcoordY}) - B({pointBcoordX}, {pointBcoordY}) составляет:\n{lineLength}");
+Console.WriteLine($"Длина отрезка A({pointAcoordX}, {pointAcoordY}, {pointAcoordZ}) - B({pointBcoordX}, {pointBcoordY}, {pointBcoordZ}) составляет:\n{lineLength}");
 
 int GetInputNumber(char p, char c)
 {
