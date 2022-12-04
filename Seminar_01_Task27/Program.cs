@@ -16,10 +16,9 @@ int GetSumOfDigits(int number)
         digitsCount++;
     }
     int[] numberArray = new int[digitsCount];
-    int divider = 10;
     for (int i = (digitsCount - 1); i >= 0; i--)
     {
-        numberArray[i] = number%divider;
+        numberArray[i] = number%10;
         number = decimal.ToInt32(number/10);
     }
     for (int i = 0; i < numberArray.Length; i++) sum = sum + numberArray[i];
