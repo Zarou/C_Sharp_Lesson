@@ -1,21 +1,20 @@
-﻿int number = 54;
+﻿
+int[] uArray = new int[10] {0,1,2,3,4,5,6,7,8,9};
+int inputNumber = 7;
 
-int sum = 0;
-int digitsCount = 1;
-int n = number;
-while (n > 9)
+if (IsInArray(uArray, inputNumber)) Console.WriteLine("OK");
+else Console.WriteLine("OK");
+
+bool IsInArray(int[] userArray, int userNumber)
 {
-    n = n / 10;
-    digitsCount++;
+    bool inArray = false;
+    foreach (int i in userArray)
+    {
+        if (userArray[i] == userNumber) inArray = true;
+    }
+    return inArray;
 }
-int[] numberArray = new int[digitsCount];
-for (int i = (digitsCount - 1); i >= 0; i--)
-{
-    numberArray[i] = number % 10;
-    number = decimal.ToInt32(number / 10);
-}
-for (int i = 0; i < numberArray.Length; i++) sum = sum + numberArray[i];
 
 
-Console.WriteLine($"Сумма цифр равна {sum}");
+//foreach (int i in randomArray) Console.WriteLine(randomArray[i] + "\t");
 
