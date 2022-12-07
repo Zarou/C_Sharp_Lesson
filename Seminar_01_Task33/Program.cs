@@ -5,7 +5,7 @@ int inputNumber = Convert.ToInt32(Console.ReadLine());
 int[] targetArray = RandomArray();
 foreach (int i in targetArray) Console.Write($"{i} |");
 Console.WriteLine();
-if (IsInArray(targetArray, inputNumber)) Console.WriteLine($"Числа {inputNumber} присутствует в массиве");
+if (IsInArray(targetArray, inputNumber)) Console.WriteLine($"Число {inputNumber} присутствует в массиве");
 else Console.WriteLine($"Числа {inputNumber} НЕТ в массиве");
 
 
@@ -32,8 +32,6 @@ int[] RandomArray()
             arraySize = Convert.ToInt32(Console.ReadLine());
         }
     } while (arraySize < 1 || arraySize > 100);
-
-    Console.WriteLine(arraySize);
 
     int[] randomArray = new int[arraySize];
     for (int i = 0; i < randomArray.Length; i++) randomArray[i] = new Random().Next(-99, 100);
