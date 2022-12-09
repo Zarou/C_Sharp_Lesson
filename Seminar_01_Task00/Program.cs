@@ -1,20 +1,14 @@
 ﻿
-int[] uArray = new int[10] {0,1,2,3,4,5,6,7,8,9};
-int inputNumber = 7;
+int[] array = new int[9] {1,2,3,41,5,6,0,8,9};
 
-if (IsInArray(uArray, inputNumber)) Console.WriteLine("OK");
-else Console.WriteLine("OK");
-
-bool IsInArray(int[] userArray, int userNumber)
+int min = array[0];
+int max = array[0];
+for (int i = 1; i < (array.Length); i++)
 {
-    bool inArray = false;
-    foreach (int i in userArray)
-    {
-        if (userArray[i] == userNumber) inArray = true;
-    }
-    return inArray;
+    if (min > array[i]) min = array[i];
+    if (max < array[i]) max = array[i];
 }
 
-
+Console.WriteLine($"Минимальное число {min}\nМаксимальное число {max}");
 //foreach (int i in randomArray) Console.WriteLine(randomArray[i] + "\t");
 
