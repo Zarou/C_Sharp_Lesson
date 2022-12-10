@@ -13,7 +13,7 @@ int PowNumber(int a, int b)
     int pow = a;
     for (int i = 2; i <= b; i++)
     {
-        pow = pow*a;
+        pow = pow * a;
     }
     return pow;
 }
