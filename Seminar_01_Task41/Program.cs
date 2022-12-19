@@ -25,16 +25,3 @@ void GetUserInput(out int userNumber, out bool userInputEnd)
     userNumber = userNum;
     userInputEnd = userInputEnter;
 }
-
-// string userInput;
-// do
-// {
-//     userInput = Console.ReadLine();
-//     bool userInputIsQ = false;
-//     if (!String.IsNullOrEmpty(userInput))
-//     {
-//         int userNumber = Convert.ToInt32(userInput);
-//         userInputNumbers.Add(userNumber);
-//     }
-//     else userInputIsQ = true;
-// } while (!String.IsNullOrEmpty(userInput));

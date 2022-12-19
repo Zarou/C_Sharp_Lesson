@@ -11,20 +11,14 @@ for (int i = 0; i < requestedNums.GetLength(0); i++) // Получаем дан�
     requestedNums[i,1] = GetUserInput(requestedNums[i,0]);
 }
 
-// Вывод массива на консоль
-// for (int i = 0; i < requestedNums.GetLength(0); i++)
-// {
-//     for (int j = 0; j < requestedNums.GetLength(1); j++) Console.Write($"{requestedNums[i, j]} ");
-// }
-
 double xCoord;
 double yCoord;
 if (requestedNums[1,1] == requestedNums[3,1] && requestedNums[0,1] == requestedNums[2,1]) Console.WriteLine("Прямые совпадают");
 else if (requestedNums[1,1] == requestedNums[3,1] && requestedNums[0,1] != requestedNums[2,1]) Console.WriteLine("Прямые параллельны");
 else
 {
-FindCrossingPoint(requestedNums[0,1], requestedNums[1,1], requestedNums[2,1], requestedNums[3,1], out xCoord, out yCoord);
-Console.WriteLine(value: $"\nЗаданные прямые пересекаются в точке с координатами:\nx = {xCoord}\ny = {yCoord}");
+    FindCrossingPoint(requestedNums[0,1], requestedNums[1,1], requestedNums[2,1], requestedNums[3,1], out xCoord, out yCoord);
+    Console.WriteLine(value: $"\nЗаданные прямые пересекаются в точке с координатами:\nx = {xCoord}\ny = {yCoord}");
 }
 
 string GetUserInput(string numberName)
