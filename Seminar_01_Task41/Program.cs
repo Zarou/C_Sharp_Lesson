@@ -19,9 +19,9 @@ void GetUserInput(out int userNumber, out bool userInputEnd)
 {
     string userInput = Console.ReadLine();
     bool userInputEnter = false;
-    int userNum;
+    int userNum = 0;
     if (!String.IsNullOrEmpty(userInput)) userNum = Convert.ToInt32(userInput);
-    else {userInputEnter = true; userNum = 0;} // Надо придумать, как обходить неназначение переменной userNum значения
+    else {userInputEnter = true;} // Надо придумать, как обходить неназначение переменной userNum значения
     userNumber = userNum;
     userInputEnd = userInputEnter;
 }
