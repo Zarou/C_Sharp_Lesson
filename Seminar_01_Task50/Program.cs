@@ -28,7 +28,6 @@ PrintArray(randomArray);
 Console.WriteLine("Размерности - {0} на {1}", arrayM, arrayN);
 Console.WriteLine("Сумма элементов главной диагонали будет составлять: {0}", mainDiagSum);
 
-
 void PrintArray(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
