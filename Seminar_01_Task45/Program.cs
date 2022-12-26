@@ -1,6 +1,6 @@
 ﻿// Напишите программу, которая будет создавать копию заданного массива с помощью поэлементного копирования.
 
-object[,] originalArray = new object[5,2] {{"YES", "NO"}, {"BLACK", "WHITE"}, {true, false}, {0, 1}, {"GET", "GIVE"}};
+object[,] originalArray = new object[6,2] {{"YES", "NO"}, {"BLACK", "WHITE"}, {true, false}, {0, 1}, {"GET", "GIVE"}, {0.7, 7.4}};
 object[,] copiedArray = new object[originalArray.GetLength(0), originalArray.GetLength(1)];
 
 for (int i = 0; i < originalArray.GetLength(0); i++)
