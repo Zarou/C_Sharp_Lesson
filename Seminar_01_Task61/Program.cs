@@ -4,7 +4,7 @@ int rowsNumber;
 int fillNum = 1;
 int blankSpace;
 
-Console.Write("Input number of rows: ");
+Console.Write("Введите количество строк: ");
 rowsNumber = Convert.ToInt32(Console.ReadLine());
 for (int i = 0; i < rowsNumber; i++)
 {

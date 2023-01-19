@@ -45,5 +45,4 @@ void PrintArray2D(int[,] array)
     }
 }
 
-// spiralArray = FillSpiral(numRows, numCols);
 PrintArray2D(spiralArray);
